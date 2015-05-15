@@ -17,7 +17,7 @@ RUN easy_install pip
 RUN mkdir /opt/opscenter
 RUN wget -O - http://downloads.datastax.com/community/opscenter-5.1.0.tar.gz | tar xzf - --strip-components=1 -C "/opt/opscenter"
 
-ADD	. /src
+ADD . /src
 
 # Copy over daemons
 RUN mkdir -p /etc/service/opscenter;
